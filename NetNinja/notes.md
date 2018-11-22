@@ -41,3 +41,9 @@ Concatenate lists with `+`: `[1, 2, 3] + [4, 5, 6] ==> [1, 2, 3, 4, 5, 6]`.
 `some_list.remove(element)` will remove the **_first_** occurence of `element` in the list. `del(some_list[1])` removes the element at index 1. Can also use a range with `[start:up_to]`.
 
 Lists accepts all data types, including lists. Access by specifying the levels: `[1, 2, [3, 4]][2][0] ==> 3`.
+
+## input() print()
+
+`input("some label")` expects an input from the console, can be stored in a variable. The variable is a string. If integer is needed, typecast the variable with `int(some_string)`. `type(int(some_string)) ==> <class 'int'>`.
+
+`print(some_variable)` returns some_variable in the console. Concatenate with a comma. Python adds a space between elements with `print()`.
