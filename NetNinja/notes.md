@@ -47,3 +47,5 @@ Lists accepts all data types, including lists. Access by specifying the levels: 
 `input("some label")` expects an input from the console, can be stored in a variable. The variable is a string. If integer is needed, typecast the variable with `int(some_string)`. `type(int(some_string)) ==> <class 'int'>`.
 
 `print(some_variable)` returns some_variable in the console. Concatenate with a comma. Python adds a space between elements with `print()`.
+
+## String formatting
