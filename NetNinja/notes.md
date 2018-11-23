@@ -71,4 +71,30 @@ else:
 
 Comparaison operators: `< > <= >= == !=`.
 
-## for loop
+## for | while loop
+
+Iterating through a list or portion of a list.
+
+```python
+some_list = [1,2,3,4,5,6,7,8]
+
+for element in some_list:
+  # code block
+
+for element in some_list[2:5]:
+  # code block
+```
+
+`break` keyword can be used to exit the loop. The code block can be an `if else` statement or anything else needed.
+
+```python
+age = 25
+iterator = 0
+
+while iterator < age
+  # code block
+  iterator += 1
+# some other code
+```
+
+`continue` allows to go back to the initial `while`, but the `iterator` still needs to be incremented, otherwise **infinite loop**
