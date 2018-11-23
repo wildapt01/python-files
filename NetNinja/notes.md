@@ -49,3 +49,9 @@ Lists accepts all data types, including lists. Access by specifying the levels: 
 `print(some_variable)` returns some_variable in the console. Concatenate with a comma. Python adds a space between elements with `print()`.
 
 ## String formatting
+
+`print()` with commas breaks the string(s). To avoid it, 2 other ways. See `string-format.py`
+
+`"string is {val1:.3f}...".format(val1, ...)` where val1 is a float, and refered to by index in `.format()` parameters.
+
+Or using F-Strings like so: `f"string is {val1:.3f}..."` where the options are placed as well after a column. `.3f` means a float with 3 numbers after the decimal point. `.3` would return the three first numbers of `val1`.
