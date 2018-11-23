@@ -98,3 +98,9 @@ while iterator < age
 ```
 
 `continue` allows to go back to the initial `while`, but the `iterator` still needs to be incremented, otherwise **infinite loop**
+
+## range
+
+In `for n in range(val):` range() generates a list of numbers UP TO `val` not included.
+
+`range()` can take 3 args: start-val, end-val, step-val. End value is not optional. End value can be also the length of a list. Using a triple `-1`, the iteration will happen from the end of the list backward.
