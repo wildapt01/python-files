@@ -105,7 +105,7 @@ In `for n in range(val):` range() generates a list of numbers UP TO `val` not in
 
 `range()` can take 3 args: start-val, end-val, step-val. End value is not optional. End value can be also the length of a list. Using a triple `-1`, the iteration will happen from the end of the list backward.
 
-## Functions
+## Functions and variable scope
 
 ```python
 def function_name(args...):
@@ -116,3 +116,5 @@ function_name(args...) # invocation
 ```
 
 Args can be value or any datatypes, including lists, functions and so on. They can be assigned a default value directly between the parenthesis, if/when a parameter is not passed in (same as JS).
+
+In functions.py, the variables `radius` and `length` are global, defined outside of the functions. If defined inside the functions, they are then in local scope. A global var can be reassigned inside a function, and this is in the local scope. Using `global var_name` will reassign the var_name value in the global scope **from within** the function. Avoid globally declared variables as much as possible.
