@@ -42,6 +42,16 @@ Concatenate lists with `+`: `[1, 2, 3] + [4, 5, 6] ==> [1, 2, 3, 4, 5, 6]`.
 
 Lists accepts all data types, including lists. Access by specifying the levels: `[1, 2, [3, 4]][2][0] ==> 3`.
 
+`some_list.count(val)` return the number of occurrences of `val` in `some_list`.
+
+#### Dictonaries
+
+Similar to objects in JS, key-value pairs in curly brackets. `some_dict[some_key] = some_value` to assign a value to a key.
+
+Keys can be retrieved as a list with `list(some_dict.keys())`, where `list()` is used to typecast its arg into a proper list. Same for values with `list(some_dict.values())`.
+
+Other way to create a dictionary is with `dict(key1 = val1, key2 = val2, ...)`.
+
 ## input() print()
 
 `input("some label")` expects an input from the console, can be stored in a variable. The variable is a string. If integer is needed, typecast the variable with `int(some_string)`.
