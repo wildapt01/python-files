@@ -52,6 +52,12 @@ Keys can be retrieved as a list with `list(some_dict.keys())`, where `list()` is
 
 Other way to create a dictionary is with `dict(key1 = val1, key2 = val2, ...)`.
 
+#### Sets
+
+`set(list)` return a set of the unique values in `list`. NB: `set()` does not preserve the order.
+
+Example in dictionaries.py
+
 ## input() print()
 
 `input("some label")` expects an input from the console, can be stored in a variable. The variable is a string. If integer is needed, typecast the variable with `int(some_string)`.
@@ -128,3 +134,14 @@ function_name(args...) # invocation
 Args can be value or any datatypes, including lists, functions and so on. They can be assigned a default value directly between the parenthesis, if/when a parameter is not passed in (same as JS).
 
 In functions.py, the variables `radius` and `length` are global, defined outside of the functions. If defined inside the functions, they are then in local scope. A global var can be reassigned inside a function, and this is in the local scope. Using `global var_name` will reassign the var_name value in the global scope **from within** the function. Avoid globally declared variables as much as possible.
+
+## Sorting a list
+
+`sorted(some_list)` will sort the list, in ascending order. BEWARE that strings are sorted by ASCII value, so `B` comes before `a`
+
+```python
+sorted([2, 1, 3, 7, 45, 21]) ==> [1, 2, 3, 7, 21, 45]
+sorted(['a', 'b', 'C']) ==> ['C', 'a', 'b']
+```
+
+Also with `list.sort()` method: `list.sort(reverse=True|False, key=myFunc)` where `key` is a callback.
