@@ -137,11 +137,15 @@ In functions.py, the variables `radius` and `length` are global, defined outside
 
 ## Sorting a list
 
-`sorted(some_list)` will sort the list, in ascending order. BEWARE that strings are sorted by ASCII value, so `B` comes before `a`
+`sorted(some_iterable [, reverse][, key])` will sort the list, in ascending order. BEWARE that strings are sorted by ASCII value, so `B` comes before `a`.
 
 ```python
 sorted([2, 1, 3, 7, 45, 21]) ==> [1, 2, 3, 7, 21, 45]
 sorted(['a', 'b', 'C']) ==> ['C', 'a', 'b']
 ```
 
-Also with `list.sort()` method: `list.sort(reverse=True|False, key=myFunc)` where `key` is a callback.
+Also with `list.sort()` method, and only for lists: `list.sort(reverse=True|False, key=myFunc)` where `key` is a callback.
+
+## Classes
+
+Similar to JS. `__init__()` is the constructor.
