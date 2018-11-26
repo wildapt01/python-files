@@ -153,3 +153,11 @@ Class names start with a capital letter.
 Similar to JS. `__init__()` is the required constructor. The atttributes can be dynamically defined in the init() function. What is defined with `self` is instance level, not accessible by the class.
 
 Class attributes, class methods and static methods are accessible by the class AND the instances. See classes.py.
+
+## Modularity
+
+Very easy to do with modules and packages.
+
+Modules are just made of classes or functions which are imported where needed.
+
+Packages are groups of modules with a `__init__.py` file in this folder to identify them as package.
