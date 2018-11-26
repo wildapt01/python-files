@@ -148,4 +148,4 @@ Also with `list.sort()` method, and only for lists: `list.sort(reverse=True|Fals
 
 ## Classes
 
-Similar to JS. `__init__()` is the constructor.
+Similar to JS. `__init__()` is the required constructor. The atttributes can be dynamically defined in the init() function.
