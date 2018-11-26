@@ -18,7 +18,7 @@ class Planet:
 # print(hoth.orbit())
 
 
-class newPlanet:
+class NewPlanet:
     # Class attribute:
     shape = "round"
     # Defining instance attributes of class Planet with __init__() constructor - Dynamic!
