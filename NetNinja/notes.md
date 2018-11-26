@@ -146,6 +146,8 @@ sorted(['a', 'b', 'C']) ==> ['C', 'a', 'b']
 
 Also with `list.sort()` method, and only for lists: `list.sort(reverse=True|False, key=myFunc)` where `key` is a callback.
 
-## Classes
+## Classes, methodes and attributes
 
-Similar to JS. `__init__()` is the required constructor. The atttributes can be dynamically defined in the init() function.
+Similar to JS. `__init__()` is the required constructor. The atttributes can be dynamically defined in the init() function. What is defined with `self` is instance level, not accessible by the class.
+
+Class attributes, class methods and static methods are accessible by the class AND the instances. See classes.py.
