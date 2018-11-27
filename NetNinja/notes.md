@@ -163,3 +163,8 @@ Very easy to do with modules and packages.
 Modules are just made of classes or functions which are imported where needed.
 
 Packages are groups of modules with a `__init__.py` file in this folder to identify them as package.
+
+## Map method
+
+Takes a callback and a list and returns a list where each element is the result of applying the callback to each element of the passed-in list as an input.
+See maps.py
