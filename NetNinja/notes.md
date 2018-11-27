@@ -44,6 +44,8 @@ Lists accepts all data types, including lists. Access by specifying the levels: 
 
 `some_list.count(val)` return the number of occurrences of `val` in `some_list`.
 
+Lists can be created from other lists, while performing an operation on the elements. For loop works, or comprehension method, see comprehension.py.
+
 #### Dictonaries
 
 Similar to objects in JS, key-value pairs in curly brackets. `some_dict[some_key] = some_value` to assign a value to a key.
