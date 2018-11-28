@@ -172,4 +172,4 @@ See maps.py.
 
 ## filter()
 
-It takes a callback returning a Boolean and a list as inputs.
+It takes a callback returning a Boolean and a list as inputs. See filters.py.
