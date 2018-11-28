@@ -168,4 +168,8 @@ Packages are groups of modules with a `__init__.py` file in this folder to ident
 
 Takes a callback and a list and returns an object where each element is the result of applying the callback to each element of the passed-in list as an input. To get a list, typecast with `list()`.
 
-See maps.py
+See maps.py.
+
+## filter()
+
+It takes a callback returning a Boolean and a list as inputs.
