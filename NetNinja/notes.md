@@ -173,3 +173,19 @@ See maps.py.
 ## filter()
 
 It takes a callback returning a Boolean and a list as inputs. See filters.py.
+
+## Lambda functions
+
+Anonymous functions defined in line, like so:
+
+```python
+nums = [1, 2, 3, 4, 5, 6]
+def squared(n):
+    return n**2
+
+# with named function squared()
+print(list(map(squared, nums)))
+
+# with lambda function
+print(list(map(lambda n: n**2, nums)))
+```
