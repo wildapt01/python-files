@@ -195,3 +195,9 @@ print(list(map(lambda n: n**2, nums)))
 Extend the behavior of a function. It wraps a block of logic around the function it sits on. There can be a block of code before the function is invoked and/or one after.
 
 Decorators are functions. They can be re-used when and where needed. See decorators.py.
+
+## Reading the content of a file
+
+Several ways to do that. `var_data_read = open('path_to_file')` then going through the lines with adequat formating. Close the file after using `var_data_read` in a code block.
+
+Other way with `with open('path_to_file') as var_data_read:` which is a function so a code block can be included. Be careful with the formating
