@@ -194,4 +194,4 @@ print(list(map(lambda n: n**2, nums)))
 
 Extend the behavior of a function. It wraps a block of logic around the function it sits on. There can be a block of code before the function is invoked and/or one after.
 
-Decorators are functions. They can be re-used when and where needed.
+Decorators are functions. They can be re-used when and where needed. See decorators.py.
