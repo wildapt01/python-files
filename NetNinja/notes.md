@@ -200,4 +200,4 @@ Decorators are functions. They can be re-used when and where needed. See decorat
 
 Several ways to do that. `var_data_read = open('path_to_file')` then going through the lines with adequat formating. Close the file after using `var_data_read` in a code block.
 
-Other way with `with open('path_to_file') as var_data_read:` which is a function so a code block can be included. Be careful with the formating
+Other way with `with open('path_to_file') as var_data_read:` which is a function so a code block can be included. Be careful with the formating of the output.
