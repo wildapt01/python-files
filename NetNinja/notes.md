@@ -201,3 +201,9 @@ Decorators are functions. They can be re-used when and where needed. See decorat
 Several ways to do that. `var_data_read = open('path_to_file')` then going through the lines with adequat formating. Close the file after using `var_data_read` in a code block.
 
 Other way with `with open('path_to_file') as var_data_read:` which is a function so a code block can be included. Be careful with the formating of the output.
+
+## Writing text to a file
+
+Same as reading, start by declaring the write variable with `with open() as`. Then `write(string,flag)` where flag can be `'w'` (write from start of file), or `'a'` (amend, add to txt file).
+
+`writelines()` takes a list as input and interates through it.
