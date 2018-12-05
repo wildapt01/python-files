@@ -9,3 +9,7 @@ Allows to easily creates dynamic web apps with Python.
 `pip install django`, then create and go to the project's directory.
 
 `django-admin startproject <PROJECT_NAME>`
+
+## URLs
+
+As ususal, browser makes a request, `urls.py` looks at it and fires the adequate function in `views.py`, which sends the response through `HttpResponse`.
