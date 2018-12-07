@@ -26,4 +26,6 @@ To be validly invoked, each app needs to be registered in INSTALLED APP object i
 
 ## Models and django's ORM
 
-In the new app articles, the `models.py` files holds the models(s) for this app. Each one is a class representing a DB table, each property of that class is a field. As with Sequelize, the properties describe the field content and can have options. Check Doc for field list. They are all properties of the `models` module in `django.db`.
+**Model creation:** In the new app articles, the `models.py` files holds the models(s) for this app. Each one is a class representing a DB table, each property of that class is a field. As with Sequelize, the properties describe the field content and can have options. Check Doc for field list. They are all properties of the `models` module in `django.db`.
+
+**Model migration:** Once a model is created or modified, it needs to be migrated to the DB. 2 steps: `python manage.py makemigrations` ==> creates an indexed file for the migration, then `python manage.py migrate` to migrate.
