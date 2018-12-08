@@ -42,3 +42,21 @@ patrick@SB-2:~/.../djangonautic$ python manage.py shell
 >>> Article.objects.all()
 <QuerySet [<Article: Hello, World!>, <Article: Django Rules>]>
 ```
+
+## Django admin
+
+Allows for site and user access control, DB items interaction.
+
+Start with creating a super user `python manage.py createsuperuser` then run the server in a browser to access this section via `localhost:8000/admin/`, username and password. The `admin` url is already defined in the main app `admin.py` file.
+
+To see the created fields, regiser them in the app `admin.py` file, like so:
+
+```python
+from django.contrib import admin
+from .models import Article
+
+# Register your models here.
+admin.site.register(Article)
+```
+
+<img src="./images/image1.png" alt="Screenshot" style="width: 600px; height: 400px">
