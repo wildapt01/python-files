@@ -43,6 +43,8 @@ patrick@SB-2:~/.../djangonautic$ python manage.py shell
 <QuerySet [<Article: Hello, World!>, <Article: Django Rules>]>
 ```
 
+Model methods can also be created inside the model definition.
+
 ## Django admin
 
 Allows for site and user access control, DB items interaction.
@@ -60,3 +62,13 @@ admin.site.register(Article)
 ```
 
 <img src="./images/image1.png" alt="Screenshot" style="width: 600px; height: 400px">
+
+## Static files
+
+Can be served by django, though would be served from cloud (AWS, Azure...) in production.
+
+In the main app `urls.py` add the `staticfiles_urlpatterns()` module. In the main app create the folder `assets`, then go to `settings.py` and point to the static files directory.
+
+3rd step is to create or copy the file(s) into this `asset` folder. Pass them to the template hard-coded or dynamically, the latter is better.
+
+Dynamic is done with the `static` module loaded in template tags in the template, then link the stylesheet to the file in `assets` folder.
