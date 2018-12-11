@@ -1,6 +1,8 @@
 body {
-  background-color: lightskyblue;
-  color: rgb(58, 26, 26);
+  background-color: #0f121f;
+  background-image: url(/static/stars.png);
+  background-repeat: no-repeat;
+  color: #fff;
 }
 
 body * {
@@ -19,6 +21,6 @@ h5 {
 a,
 a:hover,
 a:visited {
-  color: rgb(58, 26, 26);
+  color: #fff;
   text-decoration: none;
 }
