@@ -67,8 +67,12 @@ admin.site.register(Article)
 
 Can be served by django, though would be served from cloud (AWS, Azure...) in production.
 
-In the main app `urls.py` add the `staticfiles_urlpatterns()` module. In the main app create the folder `assets`, then go to `settings.py` and point to the static files directory.
+In the main app `urls.py` add the `staticfiles_urlpatterns()` module. In the main app, create the folder `assets`, then go to `settings.py` and point to the static files directory.
 
-3rd step is to create or copy the file(s) into this `asset` folder. Pass them to the template hard-coded or dynamically, the latter is better.
+3rd step is to create or copy the file(s) into this `assets` folder. Pass them to the template hard-coded or dynamically, the latter is better.
 
-Dynamic is done with the `static` module loaded in template tags in the template, then link the stylesheet to the file in `assets` folder.
+Dynamically calling the static files (images, CSS stylesheets...) is done with the `static` module loaded in template tags in the template, then link the stylesheet to the file in `assets` folder.
+
+## Extending templates
+
+Nice feature to keep our HTML templates code DRY. With `{% block content %}` and `{% endblock %}`, the common part of the HTML code can be stored in one file, the unique part in another.
