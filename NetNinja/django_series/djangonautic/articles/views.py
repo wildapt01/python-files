@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .models import Article
+from django.http import HttpResponse
 
 # Create your views here.
 
@@ -7,3 +8,7 @@ from .models import Article
 def article_list(request):
     data = Article.objects.all().order_by('date')
     return render(request, 'articles/article_list.html', {'articles': data})
+
+
+def article_detail(request, slug):
+    return HttpResponse(slug)
