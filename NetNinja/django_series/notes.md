@@ -78,3 +78,7 @@ Dynamically calling the static files (images, CSS stylesheets...) is done with t
 Nice feature to keep our HTML templates code DRY. With `{% block content %}` and `{% endblock %}`, the common part of the HTML code can be stored in one file, the unique part in another.
 
 Check django doc for other template tags and filters.
+
+## Naming URLs
+
+Allows for using the same variable names in different django apps.
