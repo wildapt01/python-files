@@ -6,8 +6,8 @@ from django.http import HttpResponse
 
 
 def article_list(request):
-    data = Article.objects.all().order_by('date')
-    return render(request, 'articles/article_list.html', {'articles': data})
+    articles = Article.objects.all().order_by('date')
+    return render(request, 'articles/article_list.html', {'articles': articles})
 
 
 def article_detail(request, slug):
