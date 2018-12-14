@@ -82,3 +82,9 @@ Check django doc for other template tags and filters.
 ## Naming URLs
 
 Allows for using the same variable names in different django apps.
+
+## User creation and login
+
+A lot of of the functionnalities for user creation and logging are already available from django.
+
+lesson 21
