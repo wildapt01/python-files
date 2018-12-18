@@ -97,5 +97,5 @@ Work vertically:
 |==> define model(s) if needed | migrate
 |==> create url in urls.py
 |==> create logic in views.py
-|==> create HTML for the said view
+|==> create HTML template for the said view
 |==> control | debug | refactor
