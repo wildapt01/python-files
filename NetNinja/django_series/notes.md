@@ -90,12 +90,12 @@ A lot of of the functionnalities for user creation and logging are already avail
 ## General process for building features
 
 Work vertically:
-    |==> app creation
-    |==> app declaration in root app
-    |==> create a templates folder + name-spacing
-    |==> add views and urls files
-    |==> define model(s) if needed | migrate
-    |==> create url in urls.py
-    |==> create logic in views.py
-    |==> create HTML for the said view
-    |==> control | debug | refactor
+|==> app creation
+|==> app declaration in root app
+|==> create a templates folder + name-spacing
+|==> add views and urls files
+|==> define model(s) if needed | migrate
+|==> create url in urls.py
+|==> create logic in views.py
+|==> create HTML for the said view
+|==> control | debug | refactor
