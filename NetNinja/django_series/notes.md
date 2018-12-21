@@ -99,3 +99,8 @@ Work vertically:
 |==> create logic in views.py
 |==> create HTML template for the said view
 |==> control | debug | refactor
+
+## Test users
+
+patrick ==> admin
+user1234 ==> yoshi7890
