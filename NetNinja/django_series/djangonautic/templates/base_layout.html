@@ -20,8 +20,9 @@
           <li>
             <form class="logout-link" action="{% url 'accounts:logout' %}"
             method="post">
-            {% csrf_token %}
-            <button type="submit">Logout</button>
+              {% csrf_token %}
+              <button type="submit">Logout</button>
+            </form>
           </li>
         </ul>
       </nav>
