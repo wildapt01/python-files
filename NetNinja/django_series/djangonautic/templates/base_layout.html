@@ -11,7 +11,7 @@
   <body>
     <header class="wrapper">
       <h1>
-        <a href="{% url 'articles:list' %}"
+        <a href="{% url 'home' %}"
           ><img src="{% static 'logo.png' %}" alt="djangonautic"
         /></a>
       </h1>
@@ -24,14 +24,17 @@
               action="{% url 'accounts:logout' %}"
               method="post"
             >
-              {% csrf_token %} 
-              <button type="submit">Logout</button>
+              {% csrf_token %} <button type="submit">Logout</button>
             </form>
           </li>
-          <li><a href="{% url 'articles:create' %}" class="highlight">New Article</a></li>
+          <li>
+            <a href="{% url 'articles:create' %}" class="highlight"
+              >New Article</a
+            >
+          </li>
           {% else %}
-            <li><a href="{% url 'accounts:login' %}">Login</a></li>
-            <li><a href="{% url 'accounts:signup' %}">Signup</a></li>
+          <li><a href="{% url 'accounts:login' %}">Login</a></li>
+          <li><a href="{% url 'accounts:signup' %}">Signup</a></li>
           {% endif %}
         </ul>
       </nav>
